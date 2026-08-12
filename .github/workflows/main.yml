@@ -76,7 +76,7 @@ jobs:
       
       - name: Pull latest image
         run: |
-          docker pull ${{secrets.AWS_ECR_LOGIN_URI}}/${{secrets.ECR_REPOSITORY_NAME}}:latest
+          docker pull ${{secrets.AWS_ECR_LOGING_URI}}/${{secrets.ECR_REPOSITORY_NAME}}:latest
       
       - name: Stop and remove container if running
         run: |
